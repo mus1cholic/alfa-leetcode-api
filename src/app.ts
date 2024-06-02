@@ -7,7 +7,7 @@ import { FetchUserDataRequest } from './types';
 const app = express();
 
 const limiter = rateLimit({
-  windowMs: 60 * 60 * 1000, // 1 hour
+  windowMs: 60 * 1000, // 1 minute
   limit: 60,
   standardHeaders: 'draft-7',
   legacyHeaders: false,
